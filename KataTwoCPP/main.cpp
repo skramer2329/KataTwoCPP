@@ -33,8 +33,27 @@ int main()
 
 	//can make more complex strings:
 	cout << slices << endl;	//endl is a new line 
-	cout << "You have " << slices << " slices of pizza." << endl;
-	cout << "You have " << 10 << " slices of pizza." << endl; //This is a way to hard code a number into a sentence instead of variable
+	cout << "You have " << slices << " slices of pizza. (variable slices is being used here)" << endl;
+	cout << "You have " << 10 << " slices of pizza. (10 is hardcoded into cout)" << endl; //This is a way to hard code a number into a sentence instead of variable
 
-	printf("%i\n", slices); //Can also print strings this way. cout is easier than printf
+	printf("Using printf to print slices: %i\n", slices); //Can also print strings this way. cout is easier than printf
+
+	using std::cin;
+	//getting user input
+	//arrows point toward the data flow. For example, cout << "hello"; the arrows are pointing TO cout, so it is going towards the console.
+	//cin >> the arrows are pointing to where the data is going to go. In this case, the data FROM console is going to be stored in userInput. 
+	int userInput;
+	
+	cout << "What is your favorite integer? ";
+	cin >> userInput;
+	cout << "The number you entered was: " << userInput << endl;
+
+	//note that cout and cin are both objects. cout is an instance of o stream, and cin is an instance of i stream.
+	//Going to end this code here.
+
+
+
+
+
+
 }
